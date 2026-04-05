@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: mainFont;
+        src: url(GoogleSansFlex_9pt-ExtraBold.ttf);
+    }
+    *{
+        font-family: mainFont;
+    }
+    #menu{
+        position: absolute;
+        top:0;
+        right: 0;
+        margin-top: 20px;
+        margin-right: 30px;
+        font-weight: 900;
+        font-size: 21px;
+        position: fixed;
+    }
+    body{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 65px;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    a{
+        color:purple;
+        text-decoration: underline;
+    }
+    #logo img{
+        width: 100px;
+        border-radius: 50%;
+    }
+    #name{
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 1px;
+        margin-top: 5%;
+        font-family: mainFont;
+    }
+    #discount{
+        font-weight: 900;
+        font-size: 25px;
+        margin-top: 2.5%;
+    }
+    #code{
+        border: solid black 1px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        padding:5px 20px;
+        font-weight: 900;
+        font-size: 25px;
+        margin-top: 5%;
+        align-items: center;
+    }
+    #code .text{
+        font-size: 22px;
+    }
+    #code .copy{
+        background-color: #741fa2;
+        padding:10px 20px;
+        border-radius: 50px;
+        color:white;
+        font-weight: 700;
+        margin-right: -12px;
+        font-size: 17px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+    #description{
+        font-size: 12px;
+        margin-top: 2%;
+    }
+    #ends{
+        margin-top: 3%;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    #line{
+        border:solid rgba(0, 0, 0, 0.08) 1px;
+        margin:35px auto auto auto;
+        width: 100%;
+    }
+    #images{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #images #one{
+        grid-column: 1;
+        grid-row: 1;
+        width: 300px;
+    }
+    #images #two{
+        grid-column: 1;
+        grid-row: 1;
+        width: 300px;
+        margin-top: 175px;
+        margin-left: 20px;
+    }
+    #download{
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    button{
+        background-color: black;
+        padding:10px 50px;
+        border: none;
+        color:white;
+        font-weight: bolder;
+        font-size: 17px;
+        border-radius: 50px;
+        margin-top: 3%;
+    }
+    button a{
+        text-decoration: none;
+        color: white;
+    }
+    #rating{
+        font-weight: bolder;
+        font-size: 17px;
+        align-items: center;
+        display: flex;
+        margin-top: 3%;
+    }
+    #rating img{
+        width:15px;
+        margin: auto 5px;
+    }
+    footer{
+        background-color: rgba(128, 128, 128, 0.089);
+        font-size: 12px;
+        padding:25px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+    <div id="menu">x</div>
+
+    <!-- ✅ CHANGED -->
+    <div id="logo">
+        <img src="image.png" alt="">
+    </div>
+
+    <div id="name">five below</div>
+    <div id="discount">50% Off Purchase</div>
+
+    <div id="code">
+        <div class="text">
+            <span style="color:#000000; font-weight:bold;">9</span><span style="color:#1a1a1a; font-weight:bold;">k</span><span style="color:#333333; font-weight:bold;">1</span><span style="color:#4d4d4d; font-weight:bold;">a</span><span style="color:#666666; font-weight:bold;">i</span><span style="color:#666666; font-weight:bold;">2</span>
+        </div>
+        <div class="copy">copy</div>
+    </div>
+
+    <div id="description">
+        Copy and paste this code at 
+        <a href="https://www.retailmenot.com/out/O/TUP7MBQ5OJH25GZESZL5QWYYF4?template=merchant&element=postclick_modal&module=modal&item=merchant_domain&source=https%3A%2F%2Fwww.retailmenot.com%2Fview%2Ffivebelow.com%3Fu%3DTUP7MBQ5OJH25GZESZL5QWYYF4%26outclicked%3Dtrue%26eventReferenceId%3Ddd1ac833-fa46-476e-a1ea-ee19a0101648" target="_blank">
+            Five Below
+        </a>
+    </div>
+
+    <div id="ends">Ending Today!</div>
+
+    <div id="line"></div>
+
+    <!-- ✅ CHANGED -->
+    <div id="images">
+        <img id="one" src="big1.webp" alt="">
+        <img id="two" src="big.webp" alt="">
+    </div>
+
+    <div id="download">Download the </br>RetailMeNot app</div>
+
+    <button>
+        <a href="https://retailmenot.onelink.me/LeIP/e7rkelyy">Get the app</a>
+    </button>
+
+    <!-- ✅ CHANGED -->
+    <div id="rating">
+        App store rating:
+        <img src="star.png" alt="">
+        <img src="star.png" alt="">
+        <img src="star.png" alt="">
+        <img src="star.png" alt="">
+        <img src="star.png" alt="">
+    </div>
+
+    <footer>*Turn off ad blockers. You must meet certain eligibility requirements to earn rewards.</footer>
+</body>
+</html>
